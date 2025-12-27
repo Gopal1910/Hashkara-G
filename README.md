@@ -1,114 +1,77 @@
-## About The Project
+v# 🏥 Medical Chatbot – Intelligent PDF-Based Healthcare Question Answering System
 
-This project leverages natural language processing and information retrieval techniques to create an interactive system for answering user queries based on a collection of PDF documents. The process begins with loading and segmenting PDFs into smaller text chunks. These chunks are then embedded using a pre-trained Hugging Face model. The embeddings are indexed using Pinecone, a vector search engine, facilitating efficient similarity searches. User queries are processed using a retrieval question-answering (QA) system, which combines the Pinecone index, a language model loaded from a file, and a defined prompt template. The project aims to provide concise and accurate responses to user queries, fostering a seamless interaction between the user and the information stored in the PDF documents.
+The **Medical Chatbot** is an advanced AI-powered question-answering system designed to retrieve meaningful, accurate, and context-aware responses from medical PDF documents. By combining Natural Language Processing (NLP), vector search, and large language models, this system enables users to ask healthcare-related queries and receive precise answers extracted directly from trusted document sources.
 
-## Built With
+---
 
-- Python
-- LangChain
-- Flask
-- Meta Llama2
-- Pinecone
+## 🌟 Project Overview
 
-## Getting Started
+This project processes medical PDF files by converting them into structured text chunks, embedding them using state-of-the-art models, and storing them in a highly efficient vector database. When a user submits a question, the system performs semantic similarity search, retrieves the most relevant document segments, and generates a clear and contextually reliable answer using a powerful language model.  
 
-This will help you understand how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+It ensures:
+- Contextual understanding of medical content  
+- Efficient document retrieval  
+- Consistent and reliable responses  
+- Seamless user interaction  
 
-## Installation Steps
+---
 
-### Option 1: Installation from GitHub
+## ✨ Key Features
 
-Follow these steps to install and set up the project directly from the GitHub repository:
+### 🧠 Intelligent Knowledge Extraction
+- Converts PDFs into searchable knowledge segments  
+- Uses embeddings for deep semantic understanding  
+- Retrieves only the most relevant medical insights  
 
-1. **Clone the Repository**
-   - Open your terminal or command prompt.
-   - Navigate to the directory where you want to install the project.
-   - Run the following command to clone the GitHub repository:
-     ```
-     git clone https://github.com/KalyanMurapaka45/Medical-Chatbot-using-Llama-2.git
-     ```
+### 🤖 Advanced Question-Answering
+- Understands user intent  
+- Generates accurate and concise responses  
+- Uses predefined medical-safe prompting  
 
-2. **Create a Virtual Environment** (Optional but recommended)
-   - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
-     ```
-     conda create -p <Environment_Name> python==<python version> -y
-     ```
+### ⚡ High Performance & Scalability
+- Fast similarity search through Pinecone
+- Optimized for large document collections
+- Designed for real-time response delivery  
 
-3. **Activate the Virtual Environment** (Optional)
-   - Activate the virtual environment based on your operating system:
-       ```
-       conda activate <Environment_Name>/
-       ```
+### 👩‍⚕️ Healthcare Focused
+- Suitable for medical learning, reference, and support
+- Assists with document understanding and knowledge lookup
+- Supports structured medical knowledge workflows  
 
-4. **Install Dependencies**
-   - Navigate to the project directory:
-     ```
-     cd [project_directory]
-     ```
-   - Run the following command to install project dependencies:
-     ```
-     pip install -r requirements.txt
-     ```
+---
 
-5. **Run the Project**
-   - Start the project by running the appropriate command.
-     ```
-     python app.py
-     ```
+## 🛠️ Built With
+- **Python**
+- **LangChain**
+- **Flask**
+- **Meta Llama 2**
+- **Pinecone**
+- **Hugging Face Embeddings**
 
-6. **Access the Project**
-   - Open a web browser or the appropriate client to access the project.
+---
 
+## 🚀 System Flow
+1️⃣ Upload medical PDF documents  
+2️⃣ PDFs are split into manageable text chunks  
+3️⃣ Text is converted to embeddings  
+4️⃣ Embeddings are indexed in Pinecone  
+5️⃣ User submits a query  
+6️⃣ Top-matching text chunks are retrieved  
+7️⃣ The language model generates the final answer  
 
-## API Key Setup
+---
 
+## 🔐 API & Credentials
+Use a `.env` file to securely configure:
+- Pinecone API Key
+- Pinecone Environment
+- Model configuration details  
 
-### Create a `.env` file in the root directory and add your Pinecone credentials as follows:
+---
 
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-PINECONE_API_ENV = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
+## 🧪 Use Cases
+- Medical research assistance  
+- Healthcare learning & knowledge support  
+- Clinical document understanding  
+- Medical training & education tools  
 
-
-### Download the quantize model from the link provided in model folder & keep the model in the model directory:
-
-```ini
-
-Model: llama-2-7b-chat.ggmlv3.q4_0.bin
-
-URL: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
-```
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-• **Report bugs**: If you encounter any bugs, please let us know. Open up an issue and let us know the problem.
-
-• **Contribute code**: If you are a developer and want to contribute, follow the instructions below to get started!
-
-1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
-5. Open a Pull Request
-
-• **Suggestions**: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or improvements you would like to see!
-
-#### Don't forget to give the project a star! Thanks again!
-
-## License
-
-This project is licensed under the [Open Source Initiative (OSI)](https://opensource.org/) approved GNU General Public License v3.0 License - see the [LICENSE.txt](LICENSE.txt) file for details.<br>
-
-
-## Contact Details
-
-Hema Kalyan Murapaka - [kalyanmurapaka274@gmail.com](kalyanmurapaka274@gmail.com)<br>
-
-
-## Acknowledgements
-
-We'd like to extend our gratitude to all individuals and organizations who have played a role in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, has been invaluable. Thank you for being a part of our journey.
