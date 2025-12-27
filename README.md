@@ -1,4 +1,4 @@
-v# 🏥 Medical Chatbot – Intelligent PDF-Based Healthcare Question Answering System
+# 🏥 Medical Chatbot – Intelligent PDF-Based Healthcare Question Answering System
 
 The **Medical Chatbot** is an advanced AI-powered question-answering system designed to retrieve meaningful, accurate, and context-aware responses from medical PDF documents. By combining Natural Language Processing (NLP), vector search, and large language models, this system enables users to ask healthcare-related queries and receive precise answers extracted directly from trusted document sources.
 
